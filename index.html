@@ -11,6 +11,18 @@
       font-display: swap;
     }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      position: relative;
+      width: 100%;
+    }
+
     body {
       background-color: #070707;
       color: #e0e0e0;
@@ -28,6 +40,7 @@
     .glitch-container {
       position: relative;
       width: 100%;
+      overflow: hidden;
     }
 
     .glitch-container::before,
@@ -39,6 +52,7 @@
       width: 100%;
       height: 100%;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      pointer-events: none;
     }
 
     .glitch-container::before {
@@ -54,9 +68,9 @@
     }
 
     .container {
+      width: 100%;
       max-width: 800px;
-      padding: 40px;
-      margin: 0 auto;
+      padding: 40px 20px;
       animation: breathe 15s ease-in-out infinite;
       position: relative;
       z-index: 1;
@@ -65,27 +79,17 @@
     @media (max-width: 768px) {
       .container {
         padding: 20px;
-        margin: 20px auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
-
+      
       p {
         font-size: 1.2rem !important;
       }
-
-      .group-signature {
-        font-size: 1.2rem !important;
-      }
-
-      .signature {
-        font-size: 1.2rem !important;
-      }
-
-      body {
-        align-items: flex-start;
-      }
     }
 
-    /* Rest of your existing CSS remains the same */
     @keyframes breathe {
       0% { opacity: 0.15; }
       20% { opacity: 0.45; }
@@ -132,6 +136,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      pointer-events: none;
     }
 
     p::before {
@@ -190,6 +195,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      pointer-events: none;
     }
 
     .group-signature::before {
