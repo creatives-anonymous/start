@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     @font-face {
       font-family: 'Ronzino';
@@ -29,10 +25,7 @@
       font-family: 'Ronzino', sans-serif;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+       min-height: 100vh;
       line-height: 1.6;
       position: relative;
     }
@@ -74,6 +67,7 @@
       animation: breathe 15s ease-in-out infinite;
       position: relative;
       z-index: 1;
+      margin: 0 auto; /* Center the container horizontally */
     }
 
     @media (max-width: 768px) {
@@ -119,7 +113,7 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.15rem; /* Increased base font size for desktop */
       margin-bottom: 1.5rem;
       font-weight: normal;
       opacity: 0.9;
@@ -142,11 +136,13 @@
     p::before {
       color: #ff000080;
       animation: glitch-text-1 4s infinite linear alternate-reverse;
+       will-change: transform;
     }
 
     p::after {
       color: #0000ff80;
       animation: glitch-text-2 4.1s infinite linear alternate-reverse;
+      will-change: transform;
     }
 
     @keyframes glitch-text-1 {
@@ -226,22 +222,3 @@
       100% { opacity: 0.1; }
     }
   </style>
-</head>
-<body>
-  <div class="glitch-container">
-    <div class="container">
-      <p data-text="In the glare of daylight, we are the creative directors, the design leaders, the faces of agencies. But as shadows lengthen, we transform. We become the anonymous craftspeople we once were—pure makers, unburdened by titles or expectations.">In the glare of daylight, we are the creative directors, the design leaders, the faces of agencies. But as shadows lengthen, we transform. We become the anonymous craftspeople we once were—pure makers, unburdened by titles or expectations.</p>
-
-      <p data-text="We are a clandestine collective of creative leaders who choose to work in darkness. By day, we shape the industry. By night, we shape your projects—invisibly, powerfully, personally. No bureaucracy. No meetings. Just pure creative force, applied with precision.">We are a clandestine collective of creative leaders who choose to work in darkness. By day, we shape the industry. By night, we shape your projects—invisibly, powerfully, personally. No bureaucracy. No meetings. Just pure creative force, applied with precision.</p>
-
-      <p data-text="Our anonymity is not a shield, but a lens—focusing solely on the work, stripped of ego and pretense. We offer direct access to some of the industry's most accomplished minds, operating in their purest form: as makers who still love to make.">Our anonymity is not a shield, but a lens—focusing solely on the work, stripped of ego and pretense. We offer direct access to some of the industry's most accomplished minds, operating in their purest form: as makers who still love to make.</p>
-
-      <p data-text="The rules are simple. No names. No faces. No portfolios. Just results.">The rules are simple. No names. No faces. No portfolios. Just results.</p>
-      
-      <p class="group-signature" data-text="—Creatives Anonymous">—<a href="mailto:ghost@creatives-anonymous.com">Creatives Anonymous</a></p>
-      
-      <div class="signature">// Mode: Dark</div>
-    </div>
-  </div>
-</body>
-</html>
