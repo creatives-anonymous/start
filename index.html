@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: 'NectoMono';
+      src: url('NectoMono-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      background-color: #070707;
+      color: #e0e0e0;
+      font-family: 'NectoMono', monospace;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      padding: 40px;
+      animation: breathe 15s ease-in-out infinite;
+      text-align: center;
+    }
+    @keyframes breathe {
+      0% { opacity: 0.15; }
+      20% { opacity: 0.45; }
+      35% { opacity: 0.25; }
+      50% { opacity: 0.5; }
+      65% { opacity: 0.3; }
+      80% { opacity: 0.35; }
+      100% { opacity: 0.15; }
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+      opacity: 0.9;
+      color: #c0c0c0;
+    }
+    .signature {
+      font-family: 'NectoMono', monospace;
+      color: #444;
+      margin-top: 3rem;
+      animation: signatureBreathe 20s ease-in-out infinite;
+    }
+    .group-signature {
+      font-size: 1.25rem;
+      color: #c0c0c0;
+      margin: 2rem 0;
+      font-weight: normal;
+    }
+    .group-signature a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    .group-signature a:hover {
+      opacity: 0.7;
+    }
+    @keyframes signatureBreathe {
+      0% { opacity: 0.1; }
+      30% { opacity: 0.2; }
+      60% { opacity: 0.15; }
+      100% { opacity: 0.1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>In the glare of daylight, we are the creative directors, the design leaders, the faces of agencies. But as shadows lengthen, we transform. We become the anonymous craftspeople we once were—pure makers, unburdened by titles or expectations.</p>
+
+    <p>We are a clandestine collective of creative leaders who choose to work in darkness. By day, we shape the industry. By night, we shape your projects—invisibly, powerfully, personally. No bureaucracy. No meetings. Just pure creative force, applied with precision.</p>
+
+    <p>Our anonymity is not a shield, but a lens—focusing solely on the work, stripped of ego and pretense. We offer direct access to some of the industry's most accomplished minds, operating in their purest form: as makers who still love to make.</p>
+
+    <p>The rules are simple. No names. No faces. No portfolios. Just results.</p>
+    
+    <p class="group-signature">—<a href="mailto:ghost@creatives-anonymous.com">Creatives Anonymous</a></p>
+    
+    <div class="signature">// Mode: Dark</div>
+  </div>
+</body>
+</html>
