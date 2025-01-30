@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     @font-face {
       font-family: 'Ronzino';
@@ -26,6 +27,7 @@
 
     .glitch-container {
       position: relative;
+      width: 100%;
     }
 
     .glitch-container::before,
@@ -54,11 +56,36 @@
     .container {
       max-width: 800px;
       padding: 40px;
+      margin: 0 auto;
       animation: breathe 15s ease-in-out infinite;
       position: relative;
       z-index: 1;
     }
 
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px auto;
+      }
+
+      p {
+        font-size: 1.2rem !important;
+      }
+
+      .group-signature {
+        font-size: 1.2rem !important;
+      }
+
+      .signature {
+        font-size: 1.2rem !important;
+      }
+
+      body {
+        align-items: flex-start;
+      }
+    }
+
+    /* Rest of your existing CSS remains the same */
     @keyframes breathe {
       0% { opacity: 0.15; }
       20% { opacity: 0.45; }
@@ -88,7 +115,7 @@
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin-bottom: 1.5rem;
       font-weight: normal;
       opacity: 0.9;
@@ -147,7 +174,7 @@
     }
 
     .group-signature {
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: #c0c0c0;
       margin: 2rem 0;
       font-weight: normal;
